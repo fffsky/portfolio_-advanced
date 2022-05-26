@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- css -->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    </head>
+    <body>
+        <header class="header" >
+            <ul class="menu-container">
+                <li>
+                    <h1><a href="index.html"><img src="img/logo.png" alt="ロゴ画像" /></a></h1>
+                </li>
+                <!-- １．PCのメニュー -->
+                <li class="navigation-lists">
+                    <ul class="navigation-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact"><i class="fas fa-file-signature"></i>Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+                <!-- ２．spのハンバーガーメニュー  -->
+                <div id="navArea">
+                    <nav>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#service">Service</a></li>
+                                <li><a href="#news">News</a></li>
+                                <li><a href="#contact"><i class="fas fa-file-signature"></i>Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div id="mask"></div>
+                </div>
+        </header>
+        <main>
+            <!-- top-view -->
+            <section class="top-view">
+                <img src="img/top1.png" alt="top画像" class="fv">
+                <h2>どこにいても、<br>生まれても、<br>世界最高の教育を受けられる。</h2>
+            </section>
+
+            <!-- about -->
+            <section id="about" class="about">
+                <div class="container">
+                <div class="title-wrapper">
+                    <h3 class="section-title">About</h3>
+                </div>
+                <ul class="about-contents">
+                    <li class="about-content">
+                        <img src="img/logo.png" alt="ロゴ画像" />
+                    </li>
+                    <li class="about-content">
+                        <h4>プログラミングスクール<br>テックアイエス</h4>
+                            <p>
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </p>
+                    </li>
+                </ul>
+            </div>
+            </section>
+
+            <!-- service  -->
+            <section id="service" class="service">
+                <div class="container">
+                <div class="title-wrapper">
+                    <h3 class="section-title">Service</h3>
+                </div>
+                    <ul class="service-contents">
+                        <li class="service-content">
+                            <img src="img/service1.png" alt="サービス1" />
+                                <h5 class="content-title">テキストテキスト</h5>
+                                    <p class="content-text">
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    </p>
+                        </li>
+                        <li class="service-content">
+                            <img src="img/service2.png" alt="サービス2" />
+                                <h5 class="content-title">テキストテキスト</h5>
+                                    <p class="content-text">
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    </p>
+                        </li>
+                        <li class="service-content">
+                            <img src="img/service3.png" alt="サービス3" />
+                                <h5 class="content-title">テキストテキスト</h5>
+                                    <p class="content-text">
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    ここにテキストが入りますここにテキストが入ります
+                                    </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- news  -->
+            <section id="news" class="news">
+                <div class="container">
+                <div class="title-wrapper">
+                    <h3 class="section-title">News</h3>
+                </div>
+                <ul class="news-list">
+                    <li class="news-date">2022/04/01</li>
+                    <li class="news-detail">タイトルタイトルタイトル</li>
+                </ul>
+                <a href="#" class="news-link">ニュース一覧はこちら</a>
+            </div>
+            </section>
+
+            <!-- contact  -->
+            <section id="contact" class="contact">
+                <div class="container">
+                <div class="title-wrapper">
+                    <h3 class="section-title">Contact</h3>
+                </div>
+                <div class="contact-text">
+                    <p>まずはお気軽に<br>無料で体験&カウンセリング</p>
+                </div>
+                <a href="#" class="contact-link">お申し込みはこちら</a>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>Copyright TECHI.S.,Inc.</p>
+        </footer>
+        <script src="hamburger.js"></script>
+    </body>
+</html>

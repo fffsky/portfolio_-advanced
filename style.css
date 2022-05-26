@@ -1,0 +1,450 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+/* --------------------------------
+common
+-----------------------------------*/
+.container {
+  max-width: 1100px;
+}
+.title-wrapper {
+  text-align: center;
+}
+.section-title {
+  position: relative;
+  color: #00abae;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+.section-title::after {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #00abae;
+  content: "";
+}
+/* --------------------------------
+header
+-----------------------------------*/
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  max-width: 1100px;
+  margin: auto;
+  align-items: center;
+}
+.menu-container img {
+  width: 170px;
+  height: auto;
+}
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.navigation-list li {
+  margin: 0 25px;
+  font-weight: bold;
+}
+.navigation-list li:last-child {
+  display: block;
+  background-color: #00abae;
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-right: 0;
+}
+.navigation-list li:last-child a{
+  color: #fff;
+}
+/* ハンバーガーメニュー PC非表示 */
+#navArea {
+  display: none;
+}
+
+/* --------------------------------
+top view
+-----------------------------------*/
+.top-view {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.top-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+.top-view h2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 2;
+}
+/* --------------------------------
+about
+-----------------------------------*/
+.about .container {
+  max-width: 1100px;
+  margin: 50px auto;
+}
+.about-contents {
+  display: flex;
+  justify-content: space-between;
+}
+.about-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-contents li:last-child {
+  margin-left: 30px;
+}
+.about-content {
+  width: 50%;
+}
+.about h4 {
+  font-size: 2.5rem;
+}
+.about-contents p {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+/* --------------------------------
+service
+-----------------------------------*/
+.service {
+  background-color: #eef8fa;
+}
+.service .container {
+  max-width: 1100px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.service-contents {
+  display: flex;
+  justify-content: space-between;
+}
+.service-content {
+  background-color: #fff;
+
+  width: 33.3%;
+  margin: 0 10px;
+}
+.service-content img {
+  width: 100%;
+  height: auto;
+}
+.content-title {
+  font-size: 2rem;
+  margin: 20px;
+  text-align: center;
+}
+.content-text {
+  padding: 0 20px 40px;
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+
+/* --------------------------------
+news
+-----------------------------------*/
+.news .container {
+  max-width: 1100px;
+  margin: 50px auto;
+}
+.news-list {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 5%;
+}
+.news-date {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px;
+  margin: 0 50px;
+  color: #888;
+  background-color: #eee;
+  border-radius: 50px;
+}
+.news-detail {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.news-link {
+  display: block;
+  text-align: center;
+  margin: 50px auto 0;
+  padding: 15px;
+  border: solid 0.5px;
+  width: 300px;
+  border-radius: 50px;
+  color: black;
+  font-size: 1.6rem;
+}
+/* --------------------------------
+contact
+-----------------------------------*/
+.contact {
+  background-color: #eef8fa;
+}
+.contact .container {
+  max-width: 1100px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.contact-text {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.contact-link {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #00abae;
+  border: 0.5px solid #00abae;
+  border-radius: 50px;
+  width: 300px;
+  padding: 15px;
+  margin: 50px auto;
+  text-align: center;
+}
+/* --------------------------------
+footer
+-----------------------------------*/
+#footer {
+  color: #fff;
+  background-color: #303030;
+  text-align: center;
+  padding: 50px 0;
+}
+#footer p {
+  font-size: 1.6rem;
+}
+/* ---------------------------
+mobile
+-----------------------------*/
+@media screen and (max-width: 768px) {
+  /* header ------------------------*/
+  .header {
+    margin: 0 30px;
+  }
+  /* common----------------------------*/
+  .container {
+    margin: 0px 15px;
+  }
+  /* about ---------------------------- */
+  .top-view {
+    height: 60vh;
+  }
+  .about .container {
+    margin: 50px 15px;
+  }
+  .top-view h2 {
+    left: 15px;
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 4;
+  }
+  .about-contents {
+    flex-direction: column;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .about-contents li:last-child {
+    margin: 0;
+  }
+  /* service ------------------------- */
+  .service-contents {
+    flex-direction: column;
+  }
+  .service-content {
+    width: 100%;
+  }
+  .service .container {
+    margin: 0 15px;
+  }
+  /* news ------------------------- */
+  .news .container {
+    margin: 50px auto;
+  }
+  .news-list {
+    flex-direction: column;
+    padding: 15px 0;
+    display: block;
+    margin: 20px 15px;
+  }
+  .news-date {
+    margin: 0;
+    width: fit-content;
+    margin: 20px 0;
+  }
+  /* contact ------------------------- */
+  .contact .container {
+    margin: 0 15px;
+  }
+
+  /* ハンバーガーメニュー -----------------*/
+
+  /* PC用のメニュー非表示 */
+  .navigation-lists {
+    display: none;
+  }
+  /* spでメニュー表示 */
+  #navArea {
+    display: block;
+  }
+  /* クリック前：メニューの表示（右に隠す） */
+  nav {
+    display: block;
+    position: fixed;
+    background-color: #ffffffdd;
+    top: 0;
+    right: -60%;
+    bottom: 0%;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+    width: 70%;
+  }
+  /* クリック後：メニューの表示 */
+  .open nav {
+    right: 0;
+    opacity: 1;
+  }
+  /* メニュー画面のレイアウト */
+      nav .inner {
+        padding: 100px 25px;
+        text-align: center;
+      }
+      nav .inner ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav .inner ul li {
+        margin: 0;
+      }
+      nav .inner ul li a {
+        display: block;
+        text-align: center;
+        width: 200px;
+        text-decoration: none;
+        color: #333;
+        font-size: 2.3rem;
+        margin: 45px auto;
+        padding: 0;
+        transition-duration: 0.2s;
+        font-weight: bold;
+      }
+      nav .inner ul li a:hover {
+        background-color: #e4e4e4;
+      }
+      nav .inner ul li:last-child a {
+        background-color: #00abae;
+        width: 250px;
+        display: inline-block;
+        border-radius: 50px;
+        padding: 10px 60px;
+        color: #fff;
+        margin: 0;
+      }
+  /* ハンバーガーボタンの位置設定 */
+  .toggle-btn {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 35px;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  /* ハンバーガーボタンのサイズ・色設定 */
+  .toggle-btn span {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 27px;
+    height: 2px;
+    background-color: #00abae;
+    transition: all 0.5s;
+    border-radius: 4px;
+  }
+  /* クリック前：アイコンはハンバーガー */
+      .toggle-btn span:nth-child(1) {
+        top: 4px;
+      }
+      .toggle-btn span:nth-child(2) {
+        top: 14px;
+      }
+      .toggle-btn span:nth-child(3) {
+        bottom: 4px;
+      }
+
+  /* クリック後：アイコンがバツ印に変化 */
+      .open .toggle-btn span {
+        background-color: #00abae;
+      }
+      .open .toggle-btn span:nth-child(1) {
+        transform: translateY(10px) rotate(-315deg);
+      }
+      .open .toggle-btn span:nth-child(2) {
+        opacity: 0;
+      }
+      .open .toggle-btn span:nth-child(3) {
+        transform: translateY(-10px) rotate(315deg);
+      }
+
+  /* クリック前：背景ブラックは非表示 */
+  #mask {
+    display: none;
+    transition: all 0.5s;
+  }
+  /* クリック後：背景ブラック */
+  .open #mask {
+    display: block;
+    background-color: #000000aa;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
