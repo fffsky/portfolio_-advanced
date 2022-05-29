@@ -45,6 +45,14 @@ common
 /* --------------------------------
 header
 -----------------------------------*/
+.header {
+  padding: 0 30px;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 9999;
+  height: 70px;
+}
 .menu-container {
   display: flex;
   justify-content: space-between;
@@ -75,7 +83,7 @@ header
   padding: 10px 30px;
   margin-right: 0;
 }
-.navigation-list li:last-child a{
+.navigation-list li:last-child a {
   color: #fff;
 }
 /* ハンバーガーメニュー PC非表示 */
@@ -257,15 +265,6 @@ footer
 mobile
 -----------------------------*/
 @media screen and (max-width: 768px) {
-  /* header ------------------------*/
-  .header {
-    padding:0 30px;
-    width: 100%;
-    position: fixed;
-    background-color: #fff;
-    z-index: 9999;
-    height: 60px;
-  }
   /* common----------------------------*/
   .container {
     margin: 0px 15px;
@@ -298,7 +297,8 @@ mobile
   }
   .service-content {
     width: 100%;
-  margin: 0;}
+    margin: 0;
+  }
   .service .container {
     margin: 0 15px;
   }
@@ -351,42 +351,42 @@ mobile
     opacity: 1;
   }
   /* メニュー画面のレイアウト */
-      nav .inner {
-        padding: 100px 25px;
-        text-align: center;
-      }
-      nav .inner ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      nav .inner ul li {
-        margin: 0;
-      }
-      nav .inner ul li a {
-        display: block;
-        text-align: center;
-        width: 200px;
-        text-decoration: none;
-        color: #333;
-        font-size: 2.3rem;
-        margin: 45px auto;
-        padding: 0;
-        transition-duration: 0.2s;
-        font-weight: bold;
-      }
-      nav .inner ul li a:hover {
-        background-color: #e4e4e4;
-      }
-      nav .inner ul li:last-child a {
-        background-color: #00abae;
-        width: 250px;
-        display: inline-block;
-        border-radius: 50px;
-        padding: 10px 60px;
-        color: #fff;
-        margin: 0;
-      }
+  nav .inner {
+    padding: 100px 25px;
+    text-align: center;
+  }
+  nav .inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav .inner ul li {
+    margin: 0;
+  }
+  nav .inner ul li a {
+    display: block;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    color: #333;
+    font-size: 2.3rem;
+    margin: 45px auto;
+    padding: 0;
+    transition-duration: 0.2s;
+    font-weight: bold;
+  }
+  nav .inner ul li a:hover {
+    background-color: #e4e4e4;
+  }
+  nav .inner ul li:last-child a {
+    background-color: #00abae;
+    width: 250px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 60px;
+    color: #fff;
+    margin: 0;
+  }
   /* ハンバーガーボタンの位置設定 */
   .toggle-btn {
     display: block;
@@ -410,29 +410,29 @@ mobile
     border-radius: 4px;
   }
   /* クリック前：アイコンはハンバーガー */
-      .toggle-btn span:nth-child(1) {
-        top: 4px;
-      }
-      .toggle-btn span:nth-child(2) {
-        top: 14px;
-      }
-      .toggle-btn span:nth-child(3) {
-        bottom: 4px;
-      }
+  .toggle-btn span:nth-child(1) {
+    top: 4px;
+  }
+  .toggle-btn span:nth-child(2) {
+    top: 14px;
+  }
+  .toggle-btn span:nth-child(3) {
+    bottom: 4px;
+  }
 
   /* クリック後：アイコンがバツ印に変化 */
-      .open .toggle-btn span {
-        background-color: #00abae;
-      }
-      .open .toggle-btn span:nth-child(1) {
-        transform: translateY(10px) rotate(-315deg);
-      }
-      .open .toggle-btn span:nth-child(2) {
-        opacity: 0;
-      }
-      .open .toggle-btn span:nth-child(3) {
-        transform: translateY(-10px) rotate(315deg);
-      }
+  .open .toggle-btn span {
+    background-color: #00abae;
+  }
+  .open .toggle-btn span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+  }
+  .open .toggle-btn span:nth-child(2) {
+    opacity: 0;
+  }
+  .open .toggle-btn span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+  }
 
   /* クリック前：背景ブラックは非表示 */
   #mask {
